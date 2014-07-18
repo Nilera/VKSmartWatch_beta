@@ -195,6 +195,7 @@ public class Message {
                 eventValues.put(Notification.EventColumns.PROFILE_IMAGE_URI, photoUri);
             }
             message = message.replace("<br>", "\n");
+            message = message.replace("\\/", "/");
             eventValues.put(Notification.EventColumns.MESSAGE, message);
 
             DBHelper dbHelper = new DBHelper(context);
