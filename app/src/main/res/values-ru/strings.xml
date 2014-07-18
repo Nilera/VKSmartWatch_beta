@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">ВКонтакте SmartWatch</string>
+    <string name="settings">Настройки ВКонтакте SmartWatch</string>
+
+    <string name="view_on_phone">Посмотреть на телефоне</string>
+
+    <string name="source_name">Notification source</string>
+    <string name="text_to_speech">Новое уведомление от</string>
+
+    <string name="preference_logged_in_text">Войти</string>
+    <string name="preference_logged_in_key">preference_logged_in</string>
+
+    <string name="preference_clear_history_text">Очистить историю</string>
+    <string name="preference_clear_history_key">preference_clear_history</string>
+    <string name="preference_clear_history_dialog_text">"Все сообщения на устройстве будут удалены, продолжить?"</string>
+    <string name="preference_clear_history_dialog_text_success">Все сообщения были удалены</string>
+    <string name="preference_clear_history_dialog_text_failure">Не удалось удалить сообщения</string>
+
+    <string name="preference_download_images_text">Скачивать изображения</string>
+    <string name="preference_download_images_summary">Показывать изображения на вашем устройстве</string>
+    <string name="preference_download_images_key">preference_download_images</string>
+
+    <string name="preference_feedback_text">Обратная связь</string>
+    <string name="preference_feedback_summary">Отправить сообщение разработчику</string>
+    <string name="preference_feedback_key">preference_feedback</string>
+
+    <string name="chat">Беседа</string>
+    <string name="sticker">Стикер</string>
+    <string name="attachment">Вложения:</string>
+    <string-array name="photo">
+        <item>фотография</item>
+        <item>фотографии</item>
+        <item>фотографий</item>
+    </string-array>
+    <string-array name="video">
+        <item>видеозапись</item>
+        <item>видеозаписи</item>
+        <item>видеозаписей</item>
+    </string-array>
+    <string-array name="audio">
+        <item>аудиозапись</item>
+        <item>аудиозаписи</item>
+        <item>аудиозаписей</item>
+    </string-array>
+    <string-array name="doc">
+        <item>документ</item>
+        <item>документа</item>
+        <item>документов</item>
+    </string-array>
+    <string-array name="wall">
+        <item>репост</item>
+        <item>репоста</item>
+        <item>репостов</item>
+    </string-array>
+    <string-array name="map">
+        <item>карта</item>
+        <item>карты</item>
+        <item>карт</item>
+    </string-array>
+
+</resources>

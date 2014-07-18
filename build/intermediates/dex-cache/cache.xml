@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="E:\Android\VKSmartWatch (beta)\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.5-b9b9ce6476f6df76abaf608172205b74f02ddb9a.jar"
+        jar="C:\Users\Whiplash\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.5\77bf7cacf9cefe19dc105e5425d2eb1bb5285881\android-async-http-1.4.5.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881"/>
+    <item
+        dex="E:\Android\VKSmartWatch (beta)\app\build\intermediates\pre-dexed\debug\classes-e9b99788be654b73bcbab70e05766b420613c92e.jar"
+        jar="E:\Android\VKSmartWatch (beta)\app\build\intermediates\exploded-aar\VKSmartWatch (beta)\smartExtensionAPI\unspecified\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c336719a5e1801f0921057709f78e6716e528493"/>
+    <item
+        dex="E:\Android\VKSmartWatch (beta)\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-259afc0729afa091c438294ddd1c170679c98522.jar"
+        jar="E:\Programs\AndroidStudio\Studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="E:\Android\VKSmartWatch (beta)\app\build\intermediates\pre-dexed\debug\support-v13-19.1.0-751b7c6103f71070831594d484ce5d499aa22198.jar"
+        jar="E:\Programs\AndroidStudio\Studio\sdk\extras\android\m2repository\com\android\support\support-v13\19.1.0\support-v13-19.1.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6b852a232f642c75a7fdfc7212b841b8c8f8959c"/>
+    <item
+        dex="E:\Android\VKSmartWatch (beta)\app\build\intermediates\pre-dexed\debug\classes-0901974ede61a841ab2664ee92ae41dbcf909e65.jar"
+        jar="E:\Android\VKSmartWatch (beta)\app\build\intermediates\exploded-aar\VKSmartWatch (beta)\smartExtensionUtils\unspecified\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="5907b266ab10da72bce11c4b48ef71aea9e71606"/>
+    <item
+        dex="E:\Android\VKSmartWatch (beta)\app\build\intermediates\pre-dexed\debug\classes-f08dc34248245d37a4ef9994c04f70c38d5fde80.jar"
+        jar="E:\Android\VKSmartWatch (beta)\app\build\intermediates\exploded-aar\VKSmartWatch (beta)\vksdk_library\unspecified\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="d5826b12f9312ff43b69864108f91fdb2a365039"/>
+
+</pre-dex-items>

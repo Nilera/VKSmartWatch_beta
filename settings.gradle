@@ -1,0 +1,4 @@
+include ':app'
+include ':smartExtensionAPI'
+include ':smartExtensionUtils'
+include ':vksdk_library'

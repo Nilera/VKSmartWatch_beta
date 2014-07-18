@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/E:/Android/VKSmartWatch%20(beta)/smartExtensionUtils/src/main/res/values/smart_watch_2.xml -->
+    <eat-comment />
+
+    <color name="smart_watch_2_text_color_grey">#ffe6e6e6</color>
+    <color name="smart_watch_2_text_color_orange">#fff0832d</color>
+    <color name="smart_watch_2_text_color_white">#ffffffff</color>
+    <!-- From: file:/E:/Android/VKSmartWatch%20(beta)/smartExtensionUtils/src/main/res/values/smart_watch.xml -->
+    <eat-comment />
+
+    <color name="smart_watch_text_color_grey">#ffe6e6e6</color>
+    <color name="smart_watch_text_color_orange">#fff0832d</color>
+    <color name="smart_watch_text_color_white">#ffffffff</color>
+    <!-- From: file:/E:/Android/VKSmartWatch%20(beta)/smartExtensionUtils/build/intermediates/exploded-aar/VKSmartWatch%20(beta)/smartExtensionAPI/unspecified/res/values/values.xml -->
+    <eat-comment />
+
+    <declare-styleable name="TimeLayout">
+
+        <!--
+        Specifies how to place the content of an object, both
+         on the x- and y-axis, within the object itself.
+        -->
+        <attr name="gravity">
+
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50" />
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03" />
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05" />
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10" />
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01" />
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11" />
+        </attr>
+        <!-- Offsets the time forwards or backwards by a number of seconds. -->
+        <attr name="timeOffset" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="TimeView">
+
+        <!-- The font size. Use pixels to prevent scaling. -->
+        <attr name="textSize" format="dimension">
+
+            <!-- The view should be as big as its parent (minus padding). It will make the view find a size that allows for the current text to fit within the parent. -->
+            <enum name="match_parent" value="-1" />
+        </attr>
+        <!-- An array of strings that should be displayed over time. It should have the same number of strings as the number of states indicated by the timeType. -->
+        <attr name="textArray" format="reference" />
+        <!-- Type indicating which time period the view should represent. -->
+        <attr name="timeType" format="enum">
+
+            <!-- Indicates that the view is not changing with time. It has 1 state. -->
+            <enum name="constant" value="0" />
+            <!-- Makes the view represent the seconds of a clock. It has 60 states. If only one background resource is provided for this type, the other 59 resources will be created by rotating the initial resource. Due to battery constraints, this timeType may not be visible at all times. -->
+            <enum name="seconds" value="1" />
+            <!-- Makes the view represent the ten part of seconds. It has 6 states. -->
+            <enum name="seconds_digit2" value="2" />
+            <!-- Makes the view represent the one part of seconds. It has 10 states. -->
+            <enum name="seconds_digit1" value="3" />
+            <!-- Makes the view represent the minutes of a clock. It has 60 states. If only one background resource is provided for this type, the other 59 resources will be created by rotating the initial resource -->
+            <enum name="minutes" value="4" />
+            <!-- Makes the view represent the ten part of seconds. It has 6 states. -->
+            <enum name="minutes_digit2" value="5" />
+            <!-- Makes the view represent the one part of seconds. It has 10 states. -->
+            <enum name="minutes_digit1" value="6" />
+            <!-- Makes the view represent the hours of a clock. It has 24 states. -->
+            <enum name="hours" value="7" />
+            <!-- Makes the view represent the one part of hours. It has 3 states. -->
+            <enum name="hours_digit2" value="8" />
+            <!-- Makes the view represent the ten part of hours. It has 10 states. -->
+            <enum name="hours_digit1" value="9" />
+            <!-- Makes the view represent the days of the week. It has 7 states. -->
+            <enum name="days_of_week" value="10" />
+            <!-- Makes the view represent the days of the month. It has 31 states. -->
+            <enum name="days_of_month" value="11" />
+            <!-- Makes the view represent the one part of the days of the month. It has 4 states. -->
+            <enum name="days_of_month_digit2" value="12" />
+            <!-- Makes the view represent the ten part of the days of the month. It has 10 states. -->
+            <enum name="days_of_month_digit1" value="13" />
+            <!-- Makes the view represent the days of the year. It has 366 states. -->
+            <enum name="days_of_year" value="14" />
+            <!-- Makes the view represent the hundred part of the days of the year. It has 4 states. -->
+            <enum name="days_of_year_digit3" value="15" />
+            <!-- Makes the view represent the ten part of the days of the year. It has 10 states. -->
+            <enum name="days_of_year_digit2" value="16" />
+            <!-- Makes the view represent the one part of the days of the year. It has 10 states. -->
+            <enum name="days_of_year_digit1" value="17" />
+            <!-- Makes the view represent the months of the year. It has 12 states. -->
+            <enum name="months" value="18" />
+            <!-- Makes the view represent the ten part of the months of the year. It has 2 states. -->
+            <enum name="months_digit2" value="19" />
+            <!-- Makes the view represent the one part of the months of the year. It has 10 states. -->
+            <enum name="months_digit1" value="20" />
+            <!-- Makes the view represent the thousand part of the years. It has 10 states. -->
+            <enum name="years_digit4" value="21" />
+            <!-- Makes the view represent the hundred part of the years. It has 10 states. -->
+            <enum name="years_digit3" value="22" />
+            <!-- Makes the view represent the ten part of the years. It has 10 states. -->
+            <enum name="years_digit2" value="23" />
+            <!-- Makes the view represent the one part of the years. It has 10 states. -->
+            <enum name="years_digit1" value="24" />
+            <!-- Makes the view represent the AM/PM part of a clock. It has 2 states. -->
+            <enum name="am_pm" value="25" />
+            <!-- Makes the view represent the hours of a clock, switching every 12 minutes. It has 60 states. If only one background resource is provided for this type, the other 59 resources will be created by rotating the initial resource. -->
+            <enum name="hours_fine" value="26" />
+        </attr>
+        <!-- Formatting template for default values. Accepts DateFormat formatting. -->
+        <!-- Example -->
+        <!-- widgets:timeType="months" -->
+        <!-- widgets:template="MM" -->
+        <attr name="template" format="string" />
+        <!-- Path in the asset folder to custom font to use instead of the device default font. The font will not be rendered in the layout editor. -->
+        <!-- Example -->
+        <!-- widgets:fontPath="comic.ttf" -->
+        <attr name="fontPath" format="string" />
+    </declare-styleable>
+    <!-- From: file:/E:/Android/VKSmartWatch%20(beta)/smartExtensionUtils/src/main/res/values/headset_pro.xml -->
+    <eat-comment />
+
+    <dimen name="headset_pro_control_height">36px</dimen>
+    <dimen name="headset_pro_control_width">128px</dimen>
+    <dimen name="headset_pro_text_size">14px</dimen>
+    <!-- From: file:/E:/Android/VKSmartWatch%20(beta)/smartExtensionUtils/src/main/res/values/smart_watch_2.xml -->
+    <eat-comment />
+
+    <dimen name="smart_watch_2_control_height">176px</dimen>
+    <dimen name="smart_watch_2_control_width">220px</dimen>
+    <dimen name="smart_watch_2_statusbar_height">28px</dimen>
+    <dimen name="smart_watch_2_text_size_large">20px</dimen>
+    <dimen name="smart_watch_2_text_size_medium">15px</dimen>
+    <dimen name="smart_watch_2_text_size_small">13px</dimen>
+    <dimen name="smart_watch_2_widget_cell_height">34px</dimen>
+    <dimen name="smart_watch_2_widget_cell_width">43px</dimen>
+    <dimen name="smart_watch_2_widget_height">170px</dimen>
+    <dimen name="smart_watch_2_widget_width">215px</dimen>
+    <!-- From: file:/E:/Android/VKSmartWatch%20(beta)/smartExtensionUtils/src/main/res/values/smart_watch.xml -->
+    <eat-comment />
+
+    <dimen name="smart_watch_control_height">128px</dimen>
+    <dimen name="smart_watch_control_width">128px</dimen>
+    <dimen name="smart_watch_text_size_normal">14px</dimen>
+    <dimen name="smart_watch_text_size_small">12px</dimen>
+    <dimen name="smart_watch_text_size_widget_badge">14px</dimen>
+    <dimen name="smart_watch_text_size_widget_name">@dimen/smart_watch_text_size_normal</dimen>
+    <dimen name="smart_watch_text_size_widget_text">@dimen/smart_watch_text_size_small</dimen>
+    <dimen name="smart_watch_text_size_widget_time">@dimen/smart_watch_text_size_small</dimen>
+    <dimen name="smart_watch_widget_height_inner">92px</dimen>
+    <dimen name="smart_watch_widget_height_outer">110px</dimen>
+    <dimen name="smart_watch_widget_text_background_height">60px</dimen>
+    <dimen name="smart_watch_widget_text_background_width">@dimen/smart_watch_widget_width_inner</dimen>
+    <dimen name="smart_watch_widget_width_inner">92px</dimen>
+    <dimen name="smart_watch_widget_width_outer">128px</dimen>
+    <!-- From: file:/E:/Android/VKSmartWatch%20(beta)/smartExtensionUtils/build/intermediates/exploded-aar/VKSmartWatch%20(beta)/smartExtensionAPI/unspecified/res/values/values.xml -->
+    <eat-comment />
+
+    <string name="app_name">SmartExtensionAPI</string>
+
+</resources>

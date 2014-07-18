@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 'Sony:Sony Add-on SDK 3.0:19'
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.airwhip.vksmartwatch"
+        minSdkVersion 11
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("debug.keystore")
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v13:19.+'
+    compile 'com.loopj.android:android-async-http:1.4.5'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':smartExtensionAPI')
+    compile project(':smartExtensionUtils')
+    compile project(':vksdk_library')
+}

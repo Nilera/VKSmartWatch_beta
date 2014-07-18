@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">VK SmartWatch</string>
+    <string name="settings">VK SmartWatch Settings</string>
+
+    <string name="view_on_phone">View on phone</string>
+
+    <string name="source_name">Notification source</string>
+    <string name="text_to_speech">New notification event from</string>
+
+    <string name="preference_logged_in_text">Logged in</string>
+    <string name="preference_logged_in_key">preference_logged_in</string>
+
+    <string name="preference_clear_history_text">Clear history</string>
+    <string name="preference_clear_history_key">preference_clear_history</string>
+    <string name="preference_clear_history_dialog_text">"All messages on the accessory will be cleared, continue?"</string>
+    <string name="preference_clear_history_dialog_text_success">All messages have been cleared</string>
+    <string name="preference_clear_history_dialog_text_failure">Failed to clear messages</string>
+
+    <string name="preference_download_images_text">Download images</string>
+    <string name="preference_download_images_summary">Show images on your accessory</string>
+    <string name="preference_download_images_key">preference_download_images</string>
+
+    <string name="preference_feedback_text">Feedback</string>
+    <string name="preference_feedback_summary">Send a message to the developer</string>
+    <string name="preference_feedback_key">preference_feedback</string>
+
+    <string name="chat">Chat</string>
+    <string name="sticker">Sticker</string>
+    <string name="attachment">Attachments:</string>
+    <string-array name="photo">
+        <item>photo</item>
+        <item>photos</item>
+        <item>photos</item>
+    </string-array>
+    <string-array name="video">
+        <item>video</item>
+        <item>videos</item>
+        <item>videos</item>
+    </string-array>
+    <string-array name="audio">
+        <item>audio</item>
+        <item>audios</item>
+        <item>audios</item>
+    </string-array>
+    <string-array name="doc">
+        <item>document</item>
+        <item>documents</item>
+        <item>documents</item>
+    </string-array>
+    <string-array name="wall">
+        <item>repost</item>
+        <item>reposts</item>
+        <item>reposts</item>
+    </string-array>
+    <string-array name="map">
+        <item>map</item>
+        <item>maps</item>
+        <item>maps</item>
+    </string-array>
+
+</resources>
