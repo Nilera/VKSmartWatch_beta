@@ -27,9 +27,10 @@ public class VKMessageService extends Service {
         @Override
         public void onMessage(JSONObject response) {
             lp.disconnect();
-            if (response.toString().contains("failed")) {
+            try {
+                response.getString("failed");
                 Request.longPollRequest(getApplicationContext(), true);
-            } else {
+            } catch (Exception e) {
                 try {
                     Log.d(Constants.DEBUG_TAG, response.toString());
                     prefs.edit().putString(Constants.TS_TOKEN, response.getString("ts")).commit();
@@ -40,7 +41,7 @@ public class VKMessageService extends Service {
                             new Message(updates.getString(i), getApplicationContext());
                         }
                     }
-                } catch (JSONException e) {
+                } catch (JSONException e1) {
                     e.printStackTrace();
                 }
             }

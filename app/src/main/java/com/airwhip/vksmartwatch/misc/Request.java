@@ -50,21 +50,32 @@ public class Request {
         return result;
     }
 
-    public static void longPollRequest(Context context, boolean changeTs) {
-        try {
-            String accessToken = VKAccessToken.tokenFromSharedPreferences(context, Constants.VK_ACCESS_TOKEN).accessToken;
-            String request = get(LONG_POLL_REQUEST + accessToken);
-            Log.d(Constants.DEBUG_TAG, request);
-            JSONObject json = new JSONObject(request).getJSONObject("response");
-            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-            SharedPreferences.Editor edit = prefs.edit();
-            edit.putString(Constants.SERVER_TOKEN, json.getString("server"));
-            edit.putString(Constants.KEY_TOKEN, json.getString("key"));
-            if (changeTs) {
-                edit.putString(Constants.TS_TOKEN, json.getString("ts"));
+    public static void longPollRequest(final Context context, final boolean changeTs) {
+        Thread th = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    String accessToken = VKAccessToken.tokenFromSharedPreferences(context, Constants.VK_ACCESS_TOKEN).accessToken;
+                    String request = get(LONG_POLL_REQUEST + accessToken);
+                    Log.d(Constants.DEBUG_TAG, request);
+                    JSONObject json = new JSONObject(request).getJSONObject("response");
+                    SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+                    SharedPreferences.Editor edit = prefs.edit();
+                    edit.putString(Constants.SERVER_TOKEN, json.getString("server"));
+                    edit.putString(Constants.KEY_TOKEN, json.getString("key"));
+                    if (changeTs) {
+                        edit.putString(Constants.TS_TOKEN, json.getString("ts"));
+                    }
+                    edit.commit();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
-            edit.commit();
-        } catch (Exception e) {
+        });
+        th.start();
+        try {
+            th.join();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
